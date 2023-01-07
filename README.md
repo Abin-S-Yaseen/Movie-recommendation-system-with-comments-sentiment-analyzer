@@ -9,40 +9,40 @@
  
  How to setup the project
  ------------------------
- *Step 1* -> Install python version 3.10.7 (other versions might work, give it a try) <br>
+ **Step 1** -> Install python version 3.10.7 (other versions might work, give it a try) <br>
  
- *Step 2* -> Locate and open the 'main' folder in the project directory  <br>
+ **Step 2** -> Locate and open the 'main' folder in the project directory  <br>
  
- *Step 3* -> Open command prompt in the main folder(by right clicking and selecting 'open in Terminal' option) and type "pip install -r requirements.txt"  <br>
+ **Step 3** -> Open command prompt in the main folder(by right clicking and selecting 'open in Terminal' option) and type "pip install -r requirements.txt"  <br>
  
- *Step 4* -> Python and the required libraries for this project are now installed in your pc  <br>
+ **Step 4** -> Python and the required libraries for this project are now installed in your pc  <br>
  
- *Step 5* -> Now open the "datasets" folder and locate the "extract datasets.zip" file.   <br>
+ **Step 5** -> Now open the "datasets" folder and locate the "extract datasets.zip" file.   <br>
            Then extract the files inside it and place there(inside the datasets folder)      [Already mentioned in a text file named "Read this.txt"]  <br>
            
- *Step 6* -> Now open the "models" folder and locate the "extract models.zip" file.  <br>
+ **Step 6** -> Now open the "models" folder and locate the "extract models.zip" file.  <br>
            Then extract the files inside it and and place there(inside the models folder)    [Already mentioned in a text file named "Read this.txt"]  <br>
            
- *Step 7* -> Now inside the "main" folder, open the command prompt(by right clicking and selecting 'open in Terminal' option)  <br>
+ **Step 7** -> Now inside the "main" folder, open the command prompt(by right clicking and selecting 'open in Terminal' option)  <br>
  
- *Step 8* -> Inside the command prompt, type "python app.py" and press Enter  <br>
+ **Step 8** -> Inside the command prompt, type "python app.py" and press Enter  <br>
  
- *Step 9* -> Locate the newly genereted flask sever link in the command prompt and paste it in any browser  <br>
+ **Step 9** -> Locate the newly genereted flask sever link in the command prompt and paste it in any browser  <br>
  
- *Step 10* -> Thats it, Now enjoy !!!  <br>
+ **Step 10** -> Thats it, Now enjoy !!!  <br>
  
  
  How to use the project
  ----------------------
- Step 1 -> Type a movie name in the search box letter by letter. A dropdown appears below the search box  <br>
+ **Step 1** -> Type a movie name in the search box letter by letter. A dropdown appears below the search box  <br>
  
- Step 2 -> Select the movie from the dropdown and press "submit" button  <br>
+ **Step 2** -> Select the movie from the dropdown and press "submit" button  <br>
  
- Step 3 -> Top 10 most similar movies to your entered movie appears on the page  <br>
+ **Step 3** -> Top 10 most similar movies to your entered movie appears on the page  <br>
  
- Step 4 -> Click on any of the recommended movies which opens a new page with the analysis of that movie's IMDb comments  <br>
+ **Step 4** -> Click on any of the recommended movies which opens a new page with the analysis of that movie's IMDb comments  <br>
  
- Step 5 -> You can see 'Top positive comments' and 'Top negative comments' of the selected movie in the newly formed webpage  <br>
+ **Step 5** -> You can see 'Top positive comments' and 'Top negative comments' of the selected movie in the newly formed webpage  <br>
  
  
  How it works
