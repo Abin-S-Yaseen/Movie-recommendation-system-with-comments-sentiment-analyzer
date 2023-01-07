@@ -68,12 +68,10 @@
  Step by step Images
  -------------------
  ![Screenshot (237)](https://user-images.githubusercontent.com/72029172/211155234-ac1355b1-dddb-4c4b-a1ab-102b4c8053ae.png)
- 
- ![Screenshot (239)](https://user-images.githubusercontent.com/72029172/211155381-1ed44bc1-0b33-40b8-9c8b-8895ae59be15.png)
 
  ![Screenshot (240)](https://user-images.githubusercontent.com/72029172/211155406-f11b3924-cab6-41b3-8a88-13a31efb8eb6.png)
  
- ![Screenshot (241)](https://user-images.githubusercontent.com/72029172/211155419-c7715e46-aa48-40ab-9415-711895202031.png)
+ ![screenshot 241 edit](https://user-images.githubusercontent.com/72029172/211156145-9c2f7025-d064-4486-8757-e31657406546.png)
  
  ![Screenshot (243)](https://user-images.githubusercontent.com/72029172/211155474-c634de4a-a32e-4143-b33d-ae76be7fdf8f.png)
  
