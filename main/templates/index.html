@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Movie Recommendation System</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='spam-favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link href="static/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+    		<h2 class='container-heading'><span>Movie Recommendation System</span> </h2>
+            <div class='description'>
+    			<p></p>
+    		</div>
+    	</div>
+
+        
+        <div class="text-field">
+            <form method="POST" action="/recommend">
+                {{ form.autocomp.label(id='enter-movie') }}: {{ form.autocomp }}
+                <script>
+                    $(function() {
+                        $.ajax({
+                            url: '{{ url_for("autocomplete") }}'
+                            }).done(function (data){
+                                $('#movie_autocomplete').autocomplete({
+                                    source: data,
+                                    minLength: 1
+                                });
+                            });
+                        });
+                </script>
+                
+                {{form.button(id='recommend_button')}}
+                
+            </form>
+        </div>
+        
+         <!-- Text Area -->
+    	<div class="rcmd-movie-txt">
+            {% if prediction %}<p>The recommended movies are...</p>
+            <!-- {% for i in prediction %}<p>{{i}}</p>{% endfor %} -->
+            {% elif prediction==False %}<p class="rcmd-failed">ERROR: PLEASE SELECT A MOVIE FROM THE DROPDOWN</p>{% endif %}
+    	</div>
+       
+        <div class="review-container">
+            {% if prediction %} 
+            <form action="{{ url_for('comments_analysis') }}" method="POST">
+                <p>
+                <input type="submit" name="submit_button" class="button1" value='{{ prediction[0] }}'>
+                </p>
+                <p>
+                <input type="submit" name="submit_button" class="button2" value='{{ prediction[1] }}'>
+                </p>
+                <p>
+                <input type="submit" name="submit_button" class="button3" value='{{ prediction[2] }}'>
+                </p>
+                <p>
+                <input type="submit" name="submit_button" class="button4" value='{{ prediction[3] }}'>
+                </p>
+                <p>
+                <input type="submit" name="submit_button" class="button5" value='{{ prediction[4] }}'>
+                </p>
+                <p>
+                    <input type="submit" name="submit_button" class="button6" value='{{ prediction[5] }}'>
+                </p>
+                <p>
+                    <input type="submit" name="submit_button" class="button7" value='{{ prediction[6] }}'>
+                </p>
+                <p>
+                    <input type="submit" name="submit_button" class="button8" value='{{ prediction[7] }}'>
+                </p>
+                <p>
+                    <input type="submit" name="submit_button" class="button9" value='{{ prediction[8] }}'>
+                </p>
+                <p>
+                    <input type="submit" name="submit_button" class="button10" value='{{ prediction[9] }}'>
+                </p>
+            </form>
+            {% endif %}
+        </div>
+
+
+        <!-- Footer -->
+        <div class='footer'>
+            <p class='footer-description'>Made by Abin and Alan</p>
+        </div>
+       
+    </body>
+</html>

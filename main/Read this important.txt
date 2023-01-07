@@ -1,0 +1,11 @@
+* Inside the datasets folder, there is a file named "Extract datasets.zip"
+
+* Extract the contents in that file and place them in that folder itself (datasets folder)
+
+* After this you can delete the "Extract datasets.zip" file
+
+* Also inside the models folder, there is a file named "Extract models.zip"
+
+* Extract the contents in that file and place them in that folder itself (models folder)
+
+* After this you can delete the "Extract models.zip" file

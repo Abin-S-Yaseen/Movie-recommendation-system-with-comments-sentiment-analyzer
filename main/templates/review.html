@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Movies Recommendation System</title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='spam-favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="static/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="body-2">
+
+		<!-- Website Title -->
+		<div class="container2">
+			<h2 class='container-heading2'><span>Movie Comments Analysis</span></h2>
+		</div>
+		<div class='movie-name-container'>
+			<h3 class='movie-name'><span>for {{movie_name}}</span></h3>
+		</div>
+
+		<!-- Result -->
+		<div class="pos-results">
+			<h3 class='pos-results-heading'><span>Top Positive Comments from IMDb</span></h3>
+			{% for i,j in predictions.items() %}
+			{% if j == 'Positive'%}
+			<p class="pos-comment">
+				<hr>
+				<ul><li>{{i}}</li></ul>
+				<hr>
+			</p>
+			{% endif %}
+			{% endfor %}
+			
+		</div>
+
+		<div class="neg-results">
+			<h3 class='neg-results-heading'><span>Top Negative Comments from IMDb</span></h3>
+			<a>{% for i,j in predictions.items() %}
+				{% if j == 'negative'%}
+				<p class="neg-comment">
+					<hr>
+					<ul><li>{{i}}</li></ul>
+					<hr>
+				</p>
+				{% endif %}
+				{% endfor %}
+			</a>
+		</div>
+
+		</div>
+		
+
+	</body>
+</html>
