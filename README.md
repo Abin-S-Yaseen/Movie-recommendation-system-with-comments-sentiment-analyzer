@@ -64,4 +64,22 @@
    Then those comments undergo Text vectorization (but here we use tf-idf[term frequency inverse document frequency] library for vectorizing)  <br>
    After vectorization, the comments are fed to a trained machine learning model(Naive bayes) which predicts if a particular comment is positive or negative.  <br>
    Then the segregated positive and negative comments are displayed on a new webpage.  <br>
-            
+
+ Step by step Images
+ -------------------
+ ![Screenshot (237)](https://user-images.githubusercontent.com/72029172/211155234-ac1355b1-dddb-4c4b-a1ab-102b4c8053ae.png)
+ 
+ ![Screenshot (239)](https://user-images.githubusercontent.com/72029172/211155381-1ed44bc1-0b33-40b8-9c8b-8895ae59be15.png)
+
+ ![Screenshot (240)](https://user-images.githubusercontent.com/72029172/211155406-f11b3924-cab6-41b3-8a88-13a31efb8eb6.png)
+ 
+ ![Screenshot (241)](https://user-images.githubusercontent.com/72029172/211155419-c7715e46-aa48-40ab-9415-711895202031.png)
+ 
+ ![Screenshot (243)](https://user-images.githubusercontent.com/72029172/211155474-c634de4a-a32e-4143-b33d-ae76be7fdf8f.png)
+ 
+ ![Screenshot (244)](https://user-images.githubusercontent.com/72029172/211155481-9fbd8882-fc75-42a5-badd-61d2e7d8f2ae.png)
+
+
+
+
+
