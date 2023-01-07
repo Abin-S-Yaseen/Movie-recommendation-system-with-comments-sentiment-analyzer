@@ -48,20 +48,20 @@
  How it works
  ------------
  * This project has two parts
-     > Movie Recommendation system  <br>
-     > Movie comments sentiment analysis  <br>
+     1) **Movie Recommendation system**  <br>
+     2) **Movie comments sentiment analysis**  <br>
      
- * Ⅰ part uses Count vectorizer and cosine similarity to predict top 10 most similar movies.
-   When you enter a movie and press 'Submit button', the text is extracted from the searchbox.
+ * Ⅰ part uses Count vectorizer and cosine similarity to predict top 10 most similar movies.  <br>
+   When you enter a movie and press 'Submit button', the text is extracted from the searchbox.  <br>
    Then the text is vectorized using CountVectorizer library in python. [since the model can only understand numbers and not texts, it is necessary
-                                                                          to perform text vectorization in which the text is converted to numbers]
+                                                                          to perform text vectorization in which the text is converted to numbers]  <br>
    Then the vectorized text is passed to the Cosine Similarity model which checks the similarity score of that movie with other movies in the dataset.
-   Then the top 10 movies with the highest similarity score is displayed on the webpage.
+   Then the top 10 movies with the highest similarity score is displayed on the webpage.  <br>
     
- * Ⅱ part uses Naive Bayes Machine Learning model to perform sentiment analysis.
-   When you click on any of the recommended movies, the top 25 comments of that movie are webscraped from the IMDb website.
-   Then those comments undergo data pre-processing(cleaning, stemming etc)
-   Then those comments undergo Text vectorization (but here we use tf-idf[term frequency inverse document frequency] library for vectorizing)
-   After vectorization, the comments are fed to a trained machine learning model(Naive bayes) which predicts if a particular comment is positive or negative.
-   Then the segregated positive and negative comments are displayed on a new webpage
+ * Ⅱ part uses Naive Bayes Machine Learning model to perform sentiment analysis.  <br>
+   When you click on any of the recommended movies, the top 25 comments of that movie are webscraped from the IMDb website.  <br>
+   Then those comments undergo data pre-processing(cleaning, stemming etc)  <br>
+   Then those comments undergo Text vectorization (but here we use tf-idf[term frequency inverse document frequency] library for vectorizing)  <br>
+   After vectorization, the comments are fed to a trained machine learning model(Naive bayes) which predicts if a particular comment is positive or negative.  <br>
+   Then the segregated positive and negative comments are displayed on a new webpage.  <br>
             
