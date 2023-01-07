@@ -3,37 +3,37 @@
  
  Functions
  ---------
- 1) Recommends new movies which are similar to the movies you enter in the search box
- 2) provides an analysis of the IMDb comments of the recommended movies
+ 1) Recommends new movies which are similar to the movies you enter in the search box <br>
+ 2) provides an analysis of the IMDb comments of the recommended movies <br>
  
  How to setup the project
  ------------------------
- Step 1 -> install python version 3.10.7 (other versions might work, give it a try)
- Step 2 -> locate and open the 'main' folder in the project directory
- Step 3 -> open command prompt in the main folder(by right clicking and selecting 'open in Terminal' option) and type "pip install -r requirements.txt"
- Step 4 -> python and the required libraries for this project are now installed in your pc
- Step 5 -> now open the "datasets" folder and locate the "extract datasets.zip" file. 
-           Then extract the files inside it and place there(inside the datasets folder)      [Already mentioned in a text file named "Read this.txt"]
- Step 6 -> now open the "models" folder and locate the "extract models.zip" file.
-           Then extract the files inside it and and place there(inside the models folder)    [Already mentioned in a text file named "Read this.txt"]
- Step 7 -> now inside the "main" folder, open the command prompt(by right clicking and selecting 'open in Terminal' option)
- Step 8 -> inside the command prompt, type "python app.py" and press Enter
- Step 9 -> locate the newly genereted flask sever link in the command prompt and paste it in any browser
- Step 10 -> Thats it, Now enjoy !!!
+ Step 1 -> install python version 3.10.7 (other versions might work, give it a try) <br>
+ Step 2 -> locate and open the 'main' folder in the project directory  <br>
+ Step 3 -> open command prompt in the main folder(by right clicking and selecting 'open in Terminal' option) and type "pip install -r requirements.txt"  <br>
+ Step 4 -> python and the required libraries for this project are now installed in your pc  <br>
+ Step 5 -> now open the "datasets" folder and locate the "extract datasets.zip" file.   <br>
+           Then extract the files inside it and place there(inside the datasets folder)      [Already mentioned in a text file named "Read this.txt"]  <br>
+ Step 6 -> now open the "models" folder and locate the "extract models.zip" file.  <br>
+           Then extract the files inside it and and place there(inside the models folder)    [Already mentioned in a text file named "Read this.txt"]  <br>
+ Step 7 -> now inside the "main" folder, open the command prompt(by right clicking and selecting 'open in Terminal' option)  <br>
+ Step 8 -> inside the command prompt, type "python app.py" and press Enter  <br>
+ Step 9 -> locate the newly genereted flask sever link in the command prompt and paste it in any browser  <br>
+ Step 10 -> Thats it, Now enjoy !!!  <br>
  
  How to use the project
  ----------------------
- Step 1 -> type a movie name in the search box letter by letter. A dropdown appears below the search box
- Step 2 -> select the movie from the dropdown and press "submit" button
+ Step 1 -> type a movie name in the search box letter by letter. A dropdown appears below the search box  <br>
+ Step 2 -> select the movie from the dropdown and press "submit" button  <br>
  Step 3 -> top 10 most similar movies to your entered movie appears on the page
- Step 4 -> click on any of the recommended movies which opens a new page with the analysis of that movie's IMDb comments
- Step 5 -> you can see 'Top positive comments' and 'Top negative comments' of the selected movie in the newly formed webpage
+ Step 4 -> click on any of the recommended movies which opens a new page with the analysis of that movie's IMDb comments  <br>
+ Step 5 -> you can see 'Top positive comments' and 'Top negative comments' of the selected movie in the newly formed webpage  <br>
  
  How it works
  ------------
  * This project has two parts
-     > Movie Recommendation system
-     > Movie comments sentiment analysis
+     > Movie Recommendation system  <br>
+     > Movie comments sentiment analysis  <br>
      
  * Ⅰ part uses Count vectorizer and cosine similarity to predict top 10 most similar movies.
    When you enter a movie and press 'Submit button', the text is extracted from the searchbox.
